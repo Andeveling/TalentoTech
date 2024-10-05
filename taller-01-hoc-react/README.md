@@ -95,12 +95,11 @@ export default withDataFetch;
 
 ## Componente de Lista de Tareas (`TodoList`)
 
-El componente `TodoList` es un ejemplo de cómo usar el HOC `withDataFetch`. Este componente muestra una lista de tareas, permite filtrar las tareas por título, y maneja los estados de carga y error.
+El componente `TodoList` es un ejemplo de cómo usar el HOC `withDataFetch`. Este componente muestra una lista de tareas,  maneja los estados de carga y error.
 
 ### Ejemplo de `TodoList`:
 
 ```tsx
-import { useState } from "react";
 import type { Todo } from "./hoc/with-data-fetch";
 import withDataFetch from "./hoc/with-data-fetch";
 
@@ -112,9 +111,6 @@ interface Props {
 
 // Componente que renderiza la lista de tareas
 const TodoList = ({ data, loading, error }: Props) => {
-	// Estado para manejar las tareas filtradas
-	const [filteredData, setFilteredData] = useState<Todo[] | null>(data);
-
 	if (loading) {
 		return <div>Loading...</div>;
 	}
@@ -123,17 +119,9 @@ const TodoList = ({ data, loading, error }: Props) => {
 		return <div>Error: {error}</div>;
 	}
 
-	// Manejador de filtro de búsqueda
-	const handleFilter = (event: React.ChangeEvent<HTMLInputElement>) => {
-		const searchTerm = event.target.value.toLowerCase();
-		const filtered = data?.filter((todo) => todo.title.toLowerCase().includes(searchTerm));
-		setFilteredData(filtered || null);
-	};
-
 	return (
 		<ul>
-			<input type="text" placeholder="Filtrar tareas" onChange={handleFilter} />
-			{filteredData?.map((todo) => (
+			{data?.map((todo) => (
 				<li key={todo.id}>{todo.title}</li>
 			))}
 		</ul>
