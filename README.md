@@ -60,10 +60,10 @@ Cada taller o ejercicio tendrá su propio archivo `README.md` que explica el pro
 Cada uno de los módulos incluirá ejercicios y talleres prácticos para reforzar los conceptos aprendidos. Algunos ejemplos:
 
 1. **[Taller 01 - Higher-Order Components en React](./taller-01-hoc-react/README.md)**
-   - Creación de un HOC para manejar la lógica de obtención de datos y gestión de errores en una lista de tareas.
+   - Creación de un **HOC** para manejar la lógica de obtención de datos y gestión de errores en una lista de tareas.
 
-2. **Taller 02 - Render Props en React** (Próximamente)
-   - [Descripción del taller].
+2. **[Taller 02 - Render Props en React](./taller-02-render-props-react/README.md)** 
+   - Creación de un componente de galería de imágenes que utiliza el patrón de **Render Props** en React para manejar efectos visuales al interactuar con las imágenes (zoom, rotación y movimiento).
 
 _(Se agregarán más talleres a medida que se avance en el bootcamp)_
 

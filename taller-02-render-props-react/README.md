@@ -1,6 +1,6 @@
 # Taller 02 - Talento Tech: Componente Render Props
 
-Este proyecto es parte del **Taller 02 de Talento Tech** y su objetivo es crear un **componente de galería de imágenes** que utiliza el patrón de **Render Props** en React para manejar efectos visuales al interactuar con las imágenes (zoom y rotación).
+Este proyecto es parte del **Taller 02 de Talento Tech** y su objetivo es crear un **componente de galería de imágenes** que utiliza el patrón de **Render Props** en React para manejar efectos visuales al interactuar con las imágenes (zoom, rotación y movimiento).
 
 ![Taller 02 - Talento Tech: Componente Render Props](./render-props.png)
 
