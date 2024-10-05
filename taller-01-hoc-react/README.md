@@ -2,17 +2,20 @@
 
 Este proyecto es parte del **Taller 01 de Talento Tech** y su objetivo es crear un **Higher-Order Component (HOC)** en React para manejar la lógica de carga de datos desde una API. El HOC inyecta los datos, el estado de carga y los posibles errores en un componente envuelto, permitiendo que dicho componente solo se encargue de la presentación.
 
+![Taller 01 - Talento Tech: HOC en React](./hoc.png)
+
+
 ## Descripción del HOC
 
 Un **HOC (Higher-Order Component)** es una función que toma un componente como argumento y devuelve un nuevo componente, añadiendo funcionalidades adicionales. En este caso, el HOC maneja la lógica de la carga de datos desde una API externa (en este caso, `https://jsonplaceholder.typicode.com/users/2/todos`), y pasa esos datos como `props` al componente que envuelve.
 
 ### Funcionalidades del HOC:
 - **Carga de datos**: Realiza una petición a la API para obtener una lista de tareas (todos).
-- **Manejo de estado**: Controla tres estados: 
+- **Manejo de estado**: Controla tres estados:
   - `data`: Datos obtenidos de la API.
   - `loading`: Estado de carga, que es `true` mientras los datos se están obteniendo.
   - `error`: Manejo de posibles errores en la petición.
-  
+
 El componente envuelto (WrappedComponent) solo se encarga de recibir estos `props` y renderizar la UI.
 
 ### HOC: `withDataFetch`
@@ -145,4 +148,3 @@ export default WrappedTodoList;
 2. **Manejo de estado** utilizando hooks como `useState`, `useEffect` y `useCallback`.
 3. **Manejo de errores en peticiones** asíncronas y cómo propagar estos errores a través de componentes.
 4. **Renderizado condicional** basado en los estados de carga (`loading`) y error (`error`).
-
