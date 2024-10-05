@@ -1,7 +1,3 @@
-Aquí tienes el **README actualizado** para reflejar el verdadero contenido del bootcamp **Talento Tech Full Stack Nivel Avanzado**, con los módulos que me mencionaste:
-
----
-
 # Talento Tech Full Stack - Nivel Avanzado
 
 Este repositorio contiene todos los ejercicios, talleres y proyectos desarrollados durante el **Bootcamp Talento Tech Full Stack - Nivel Avanzado**. El objetivo de este bootcamp es proporcionar una experiencia avanzada en el desarrollo Full Stack, abarcando tecnologías de frontend, backend, bases de datos, DevOps, testing, inteligencia artificial, y despliegue.
